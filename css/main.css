@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body, .bg-page-color {
+    background-color: #212121;
+}
+
+body {
+    position: relative;
+}
+
+
+.about {
+    font-size: 2em;
+    background: url("../images/sanfrancisco.jpg") no-repeat;
+    
+    height: 600px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about, .technologies, .team {
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    color: white;
+}
+
+.about .container {
+    height: 100%;
+}
+
+.technologies {
+    margin-top: 2rem;
+}
+
+.technology {
+    font-size: 1rem;
+}
+
+.technology figcaption {
+    font-size: 1.5rem;
+}
+
+.team {
+    margin-top: 3rem;
+}
+
+.team-member {
+    background-color: #353535;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 10px;
+}
+
+.team-member img {
+    border-radius: 10px;
+}
