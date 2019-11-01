@@ -11,7 +11,7 @@ body {
 }
 
 
-.about {
+.home {
     font-size: 2em;
     background: url("../images/sanfrancisco.jpg") no-repeat;
     
@@ -23,14 +23,18 @@ body {
     background-size: cover;
 }
 
-.about, .technologies, .team, .clients {
+.home, .technologies, .team, .clients, .contact p, footer, .about {
     text-align: center;
     font-family: 'Archivo Black', sans-serif;
     color: white;
 }
 
-.about .container {
+.home .container {
     height: 100%;
+}
+
+.about {
+    background-color: #1a1b1d;
 }
 
 .technologies {
@@ -74,9 +78,34 @@ body {
 }
 
 .clients {
-    margin-top: 3rem;
+}
+
+.clients h1 {
+    font-size: 3rem;
 }
 
 .client {
     margin: 0;
+}
+
+.contact {
+    background-color: #1a1b1d;
+}
+
+.logo {
+    padding: 0.5rem;
+    height: 200px;
+    width: 200px;
+}
+
+.contact p {
+    text-align: left;
+    font-size: 0.75em;
+    color: #6c757d;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 0.75rem;
 }

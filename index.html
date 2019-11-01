@@ -23,6 +23,9 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
@@ -35,7 +38,7 @@
             <a class="nav-link" href="#clients">Clients</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -43,12 +46,12 @@
     
     <main>
 
-      <section id="about" class="about">
+      <section id="home" class="home">
         <div class="container">
           <div class="row h-100 align-items-center">
             <div class="col-sm-12">
               <p>DevDumbOps Solutions</p>
-              <p>Everything you need to scale all over the world and manage ultra complitacted and realiable architercture</p>
+              <p class="d-none d-sm-inline">Everything you need to scale all over the world and manage ultra complitacted and realiable architercture</p>
             </div>
             <div class="col-sm-12">
                 <button type="button" class="btn btn-dark bt-lg">More info</button>
@@ -57,7 +60,24 @@
         </div>
       </section>
 
+      <section id="about" class="about">
+        <div class="container">
+          <div class="row py-3">
+            <div class="col-12">
+              <h1>About us</h1>
+              <p>We are a small company specialized in devops field. There is not such thing as impossible in our dictionary. We will give you a better service than God did to the Adam and Eve.</p>
+              <p>Production environment is the main thing we do but we are doing consulting as well. (If you happen to need some meth we have a specialist as well).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="technologies" class="technologies container">
+        <div class="row">
+          <div class="col-12 mb-3">
+            <h1>Technologies</h1>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4 d-flex flex-column justify-content-between">
             <article class="technology">
@@ -214,36 +234,86 @@
         </div>
       </section>
 
-      <section id="clients" class="clients">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-flex flex-column justify-content-between">
-              <img src="images/bombowiec.png" alt="bombowiec" class="img-fluid">
-              <span>Bombowiec Solutions</span>
-            </div>
+      <section id="clients" class="clients container">
+        <div class="row py-3">
+          <div class="col-12">
+            <h1>Our Clients</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-flex flex-column justify-content-between">
+            <img src="images/bombowiec.png" alt="bombowiec" class="img-fluid">
+            <span>Bombowiec Solutions</span>
+          </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-flex flex-column justify-content-between">
-              <img src="images/piesseba.png" alt="piesseba" class="img-fluid">
-              <span>FrontendDog inc</span>
-            </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-flex flex-column justify-content-between">
+            <img src="images/piesseba.png" alt="piesseba" class="img-fluid">
+            <span>FrontendDog inc</span>
+          </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-flex flex-column justify-content-between">
-                <img src="images/liver.png" alt="liver" class="img-fluid">
-                <span>Liver Corporation</span>
-            </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-flex flex-column justify-content-between">
+              <img src="images/liver.png" alt="liver" class="img-fluid">
+              <span>Liver Corporation</span>
+          </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-flex flex-column justify-content-between">
-                <img src="images/stork.png" alt="sortk" class="img-fluid">
-                <span>Stork Babies Industries</span>
-            </div>
-
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-flex flex-column justify-content-between">
+              <img src="images/stork.png" alt="sortk" class="img-fluid">
+              <span>Stork Babies Industries</span>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-lg-3 d-flex justify-content-center">
+            <img src="images/logo_transparent.png" class="logo">
+          </div>
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-sm-6 text-left">
+                <h3>Contact</h3>
+                <p>We have no physyical location yet.</p>
+                <p>
+                  The only way to get in touch with us is to
+                  click <a href="#">This link</a>.
+                </p>
+                <p>Gladly we never respond.</p>
+              </div>
+              <div class="col-sm-6">
+                <h3>Contact us here</h3>
+                <form onsubmit="return false;">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control"placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We never answer though.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Your company name</label>
+                      <input type="text" class="form-control"placeholder="Company name">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-dark">Get in touch</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </section>
 
+    <footer>
+      <div class="container">
+        <div class="row text-center py-1">
+          <div class="col-md-6">
+            DevDumbOps
+          </div>
+          <div class="col-md-6">
+            <a href="#">Privacy Policy & Terms of Use</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Optional JavaScript -->
