@@ -23,7 +23,7 @@ body {
     background-size: cover;
 }
 
-.about, .technologies, .team {
+.about, .technologies, .team, .clients {
     text-align: center;
     font-family: 'Archivo Black', sans-serif;
     color: white;
@@ -47,14 +47,36 @@ body {
 
 .team {
     margin-top: 3rem;
+    background-color: #1a1b1d;
+    padding-top: 3rem;
 }
 
 .team-member {
-    background-color: #353535;
+    background-color: #151719;
     font-family: 'Josefin Sans', sans-serif;
     border-radius: 10px;
+    margin: 1px;
 }
 
 .team-member img {
     border-radius: 10px;
+}
+
+.github-small {
+    width: 60px;
+    height: 30px;
+}
+
+.github-large {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.clients {
+    margin-top: 3rem;
+}
+
+.client {
+    margin: 0;
 }
